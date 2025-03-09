@@ -180,7 +180,7 @@ button {
   transition: background-color 0.3s, transform 0.3s;
 }
 #download-btn {
-  width: 100vb;
+  width: 100%;
   height: auto;
   margin-top: 20px;
   border: none;
