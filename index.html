@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Online Image Compressor</title>
+    <link rel="stylesheet" href="/resource/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/resource/favicon.webp"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>💡 Free Online Image Compressor</h1>
+      <p>Reduce image size instantly!</p>
+      <p>
+        Optimize your images with FreeImageCompressor.Github.io | Easy to use,
+        Free and Safe, We don't collect any informations from Users. Do not use
+        any API
+      </p>
+
+      <!-- File Upload Section -->
+      <div class="upload-section">
+        <label for="file-input" class="drop-area">
+          <span>Drag & Drop or Click to Upload </span>
+          <input type="file" id="file-input" accept="image/*" />
+        </label>
+      </div>
+
+      <!-- Preview Section -->
+      <div class="preview">
+        <div class="original">
+          <h3>Original Image</h3>
+          <img id="original-img" src="#" alt="Original Image" />
+          <p>Size: <span id="original-size">-</span></p>
+        </div>
+        <div class="compressed">
+          <h3>Compressed Image</h3>
+          <img id="compressed-img" src="#" alt="Compressed Image" />
+          <p>Size: <span id="compressed-size">-</span></p>
+          <p>Reduced by: <span id="reduction-percent">-</span></p>
+        </div>
+      </div>
+
+      <!-- Compression Settings -->
+      <div class="settings">
+        <div id="customization">
+          <label for="quality">Size of the Image:</label>
+          <input type="range" id="quality" min="5" max="100" value="50" />
+          <span id="quality-value">50%</span>
+
+          <label for="width">Width:</label>
+          <input type="number" id="width" placeholder="Auto" />
+          <label for="height">Height:</label>
+          <input type="number" id="height" placeholder="Auto" />
+
+          <label for="format">Output Format:</label>
+          <select id="format">
+            <option value="jpeg">JPEG</option>
+            <option value="png">PNG</option>
+            <option value="webp">WEBP</option>
+          </select>
+        </div>
+
+        <!-- Compress Button -->
+        <button class="last-btn" id="compress-btn">Compress Image</button>
+      </div>
+
+      <!-- Download Button -->
+      <button class="last-btn" id="download-btn" disabled>
+        <i class="fas fa-download"></i> Download Compressed Image
+      </button>
+
+      <!-- Dark/Light Mode Toggle -->
+      <button id="theme-toggle">🌙 Dark</button>
+    </div>
+
+    <div id="content" class="container">
+      <hr />
+      <br />
+      <p>
+        The Free Online Image Compressor is a free and easy-to-use web
+        application that helps you to reduce your image size.
+      </p>
+
+      <h3>Image Compressor is useful for:</h3>
+      <li style="list-style-type: none">
+        <ul>
+          To make images load faster on websites.
+        </ul>
+        <ul>
+          Reduce image size for emails, social media posts, etc.
+        </ul>
+        <ul>
+          To change image formats (e.g. turning a PNG into a JPEG).
+        </ul>
+        <ul>
+          To resize images to fit specific dimensions.
+        </ul>
+      </li>
+
+      <p>
+        Everything happens right in your browser, so your images stay private
+        and secure.
+      </p>
+
+      <h3>How to use it?</h3>
+      <p>
+        First upload your image or drag and drop it into the upload section.
+        Then adjust the size of the compressed image as per your requirement.
+        After that, you can set the width and height of your image if needed; if
+        you leave this part, then don’t worry, your image will have the same
+        height and width. Then choose the format in which you want to download
+        your image. Now just click on the compress button, and your image will
+        get compressed. Hurray! You can now download your Compressed Image on
+        your local device.
+      </p>
+
+      <h3>Is it safe to use?</h3>
+      <p>
+        Here you don’t need to worry about safety. We don’t collect any
+        information from the users, and we don’t even use any API, so you can be
+        relaxed about your privacy. Most importantly, the images that you are
+        uploading here get compressed into your own browser. We neither collect
+        any user’s image nor save them.
+      </p>
+      <br />
+      <hr />
+
+      <div>
+        <p style="font-size: large; text-align: center">
+          Made by
+          <a
+            href="https://www.linkedin.com/in/bikan-chowdhury-928420309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            >Bikan Chowdhury
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <script src="resource/script.js"></script>
+  </body>
+</html>
